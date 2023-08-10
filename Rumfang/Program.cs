@@ -12,17 +12,17 @@ namespace Rumfang
         {
             Console.WriteLine("Height");
             Console.Write("> ");
-            double height = double.Parse(Console.ReadLine());
+            float height = float.Parse(Console.ReadLine());
 
             Console.WriteLine("\nWidht");
             Console.Write("> ");
-            double width = double.Parse(Console.ReadLine());
+            float width = float.Parse(Console.ReadLine());
 
             Console.WriteLine("\nLenght");
             Console.Write("> ");
-            double length = double.Parse(Console.ReadLine());
+            float length = float.Parse(Console.ReadLine());
 
-            double volume = height * width * length;
+            float volume = height * width * length;
             
             Console.WriteLine("\nVolume = " +  volume);
             Console.ReadLine();
