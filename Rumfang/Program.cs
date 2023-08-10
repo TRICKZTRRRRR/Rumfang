@@ -10,21 +10,34 @@ namespace Rumfang
     {
         static void Main(string[] args)
         {
+            // Prompt user for height input
             Console.WriteLine("Height");
             Console.Write("> ");
+
+            // Read and parse user input into the 'height' variable
             float height = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("\nWidht");
+            // Prompt user for width input
+            Console.WriteLine("\nWidth");
             Console.Write("> ");
+
+            // Read and parse user input into the 'width' variable
             float width = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("\nLenght");
+            // Prompt user for length input
+            Console.WriteLine("\nLength");
             Console.Write("> ");
+
+            // Read and parse user input into the 'length' variable
             float length = float.Parse(Console.ReadLine());
 
+            // Calculate the volume using the provided dimensions
             float volume = height * width * length;
-            
-            Console.WriteLine("\nVolume = " +  volume);
+
+            // Display the calculated volume
+            Console.WriteLine("\nVolume = " + volume);
+
+            // Wait for user input before exiting
             Console.ReadLine();
         }
     }
